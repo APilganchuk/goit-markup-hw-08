@@ -1,0 +1,126 @@
+.modal-title {
+display: block;
+
+margin-top: 40px;
+margin-bottom: 12px;
+
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+.modal-form {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+    
+    text-align: left;
+
+}
+.form-field .form-input {
+    height: 40px;
+
+    padding-left: 42px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-top: 4px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 250ms var(--cubic);
+}
+
+.form-field .textarea {
+    width: 100%;
+      
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    resize: none;
+    outline: none;
+    transition: border-color 250ms $timing-function;
+}
+.textarea:focus {
+    border-color: $accent-color;
+}
+
+/* Стилизация чекбокса */
+
+.checkbox-label > .link {
+    text-decoration: underline;
+    color: $accent-color;
+}
+.checkbox-label {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.checkbox {
+    appearance: none;
+    position: absolute;
+}
+.checkbox-container {    
+    margin-bottom: 30px;
+    
+}
+
+.checkbox-container .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    display: block;
+    width: 16px;
+    height: 15px;
+    
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+.checkbox:checked ~ .icon {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url("../images/icons/icon-check.svg");
+    background-size: contain;
+    background-origin: border-box;
+}
+
+/* Стилизация инпутов */
+.form-field {
+    position: relative;
+}
+.icon-form {
+    position: absolute;
+    left: 12px;
+    top: 55%;
+    
+    fill: #000000;
+    transition: fill 250ms $timing-function;
+
+    pointer-events: none;
+}
+.form-input:focus + .icon-form {
+    fill: $accent-color;
+}
+.form-input:focus {
+    border-color: $accent-color;
+}

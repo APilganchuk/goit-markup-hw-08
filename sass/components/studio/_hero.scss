@@ -1,0 +1,51 @@
+.hero > .hero-title {         
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+       
+    color: $secondary-text-color;
+
+}
+.hero .button {
+    min-width: 200px;
+        
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;     
+    letter-spacing: 0.06em;
+
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+.hero {
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    
+              
+}
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 30px;
+    
+}
+.hero-bg {
+    max-width: 1600px;
+    min-height: 600px;
+    margin: 0 auto;
+
+    background-color: #000000;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

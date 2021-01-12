@@ -1,0 +1,66 @@
+// Постоянные клиенты
+.section-clients {
+    margin-bottom:0;
+    margin-top: 0;
+    padding-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.clients {
+    
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+
+.clients-list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;  
+    margin-bottom: 0;
+}
+.icon-logo-1,.icon-logo-2,
+.icon-logo-3,.icon-logo-4,
+.icon-logo-5,.icon-logo-6 {
+    display: block;
+    fill: currentColor; 
+}
+.clients-list .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-list > li:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-list .icon {
+    width: 170px;
+    height: 90px;
+    color:  #afb1b8;
+    transition: color 250ms $timing-function,border 250ms $timing-function;
+}
+.clients-list .item {
+    display: block;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+   
+}
+.clients-list .icon:hover ,
+.clients-list .icon:focus  {
+    color: $accent-color;
+    
+}
+.clients-list .item:hover ,
+.clients-list .item:focus {
+    border: 1px solid $accent-color;
+    
+}

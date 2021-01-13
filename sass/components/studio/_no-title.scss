@@ -15,16 +15,51 @@
     letter-spacing: 0.03em;
 
 }
+.section-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: #212121;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 251px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 251px;
+    }
+}
 .no-title {
     padding-left: 0;
-    display: flex;
+    
     margin-bottom: 0;
     margin-top: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
     
 }
 .section.container {
     background: $primary-bg-color;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 94px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
     
 }
 .container .section-title {
@@ -33,22 +68,52 @@
 }
 .container .section-descriptions {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
 }
 .container .section-item:not(:last-child) {
-    margin-right: 30px;
+    
 
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+
+}
+.container .section-item {
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 .no-title .section-item::before {
     content: "";
-    width: 270px;
+    width: 450px;
     height: 120px;
     display: block;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
     padding: 25px 100px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin-bottom: 30px;
+    }
 }
 .antenna::before {
     background-image: url("../images/icons/antenna-1.svg");

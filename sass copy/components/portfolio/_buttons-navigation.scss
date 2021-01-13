@@ -1,4 +1,4 @@
-.box .list-btn {
+.section .list-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -8,20 +8,11 @@
 
 .portfolio-btn {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: 0;
-
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    @media screen and (min-width: 1200px) {
-        justify-content: center;
-        margin-bottom: 50px;
-    }
     
 }
 .list-btn {

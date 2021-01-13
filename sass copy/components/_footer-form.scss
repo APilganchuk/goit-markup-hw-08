@@ -1,26 +1,10 @@
 .footer-subscribe {
-    padding-bottom: 60px;
-    
-    @media screen and (min-width: 768px) {
-        
-        
-        width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    @media screen and (min-width: 1200px) {
-              
-
-        width: 570px;
-        margin-left: 93px;
-    }
+    width: 570px;
+    margin-left: 93px;
 }
 .btn-subscribe {
-    display: block;
     min-width: 200px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 12px;
     padding: 10px 26px;
 
     background-color: $accent-color;
@@ -29,13 +13,6 @@
     border: none;
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-        
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 12px;   
-        
-    }
 
 }
 .subscribe {
@@ -61,9 +38,9 @@
     background-image: url("../images/icons/send.svg");
 }
 .js-speaker-form .mail {
-    width: 100%;
+    width: 358px;
     height: 50px;
-    margin-bottom: 20px;
+
     padding: 16px;
 
     background-color: #2F303A;
@@ -76,22 +53,7 @@
     line-height: 20px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
 }
 .js-speaker-form {
-    display: block;
-    
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        width: 450px;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        
-
-        width: 570px;
-        
-    }
-    
+    display: flex;
 }

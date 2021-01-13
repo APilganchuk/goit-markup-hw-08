@@ -1,18 +1,12 @@
-.hero  .hero-title {
+.hero > .hero-title {         
     font-weight: 900;
-    font-size: 26px;
+    font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
        
     color: $secondary-text-color;
 
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 44px;
-    }   
 }
 .hero .button {
     min-width: 200px;
@@ -44,7 +38,7 @@
     
 }
 .hero-bg {
-    width: 480px;
+    max-width: 1600px;
     min-height: 600px;
     margin: 0 auto;
 
@@ -54,11 +48,4 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 100%
-    }   
 }

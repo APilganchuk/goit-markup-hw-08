@@ -28,24 +28,8 @@
 
 .footer .logo {
     display: block;
- 
-    width: 154px;
-
-    
+    padding-top: 60px;
     padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 768px) {
-        margin-left: 0;
-        margin-right: 0;
-        padding-top: 60px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 0;
-        margin-right: 0;
-        padding-top: 60px;
-    }
 }
 .footer-nav {
     margin-top: 0;
@@ -63,38 +47,15 @@
     padding-bottom: 9px;
 }
 .footer-section {
-    width: 232px;
-    padding-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 60px;
-        margin-right: 70px;
-        padding-top: 0;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 60px;
-        margin-right: 70px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    
+    margin-bottom: 60px;
+    margin-right: 70px;
 }
 .footer-link {
     display: block;
 }
 .footer .container {
-    display: block;
+    display: flex;
     align-items: baseline;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: nowrap;
-    }
 }
 
 .footer-discription {
@@ -103,7 +64,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -111,28 +71,6 @@
 
     margin-top: 0;
     margin-bottom: 20px;
-
-    @media screen and (min-width: 768px) {
-        text-align: center;
-    }
-    @media screen and (min-width: 1200px) {
-        text-align: start;
-    }
-}
-.footer-box-discription {
-    width: 206px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 65px;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 60px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-top: 60px;
-    }
-
 }
 
 .footer-list .icon::before {
@@ -163,14 +101,6 @@
     display: flex;
     align-items: baseline;
     width: 231px;
-
-    text-align: center;
-    @media screen and (min-width: 768px) {
-        text-align: left;
-    }
-    @media screen and (min-width: 1200px) {
-        text-align: left;
-    }
 }
 .instagram-white::before {
     background-image: url("../images/icons/instagram-white.svg");

@@ -2,27 +2,11 @@
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 
     color: #000000;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
-
-        padding-top: 0;
-        padding-bottom: 0;
-    }
 }
 
 .nav .link {
@@ -79,13 +63,6 @@
 }
 .navigation .logo {
     margin-right: 93px;
-
-    @media screen and (min-width: 768px) {
-        margin-right: auto;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-right: 93px;
-    }   
 }
 
 .link.current::after {
@@ -104,66 +81,36 @@
 } 
     
 .nav {
-    display: none;
+    display: flex;
     margin: 0;
     padding-left: 0;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }   
+    
            
 }
 .auth-nav {
-    display: none;
+    display: flex;
     margin: 0;
-    padding-left: 0; 
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }                
+    padding-left: 0;              
 }
 .page-header .address {
     margin-left: auto;
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-        
-    }
 }
 .auth-nav > .link:last-child {
     margin-right: 0;
 }
 .auth-nav .link {
     padding: 32px 0;
-    @media screen and (min-width: 768px) {
-        padding: 0;
-        
-    }
 }
 .nav > li:not(:last-child) {
     display: block;
     margin-right: 50px;
-
-    
+       
       
 }
 .auth-nav li:not(:last-child) {
     margin-right: 50px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-    @media screen and (min-width: 1200px) {
-       margin-right: 50px;
-       margin-bottom: 0;
-    }
-          
+       
        
 }
 .auth-nav .link {

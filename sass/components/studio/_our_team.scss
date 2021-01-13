@@ -6,29 +6,91 @@
 .our-team {
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
     
 }
 .our-team .section-items {
-    display: flex;
+    display: block;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
                
 }
 .section-team {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 50px;
-    padding-top: 94px;
+    padding-bottom: 30px;
+    padding-top: 60px;
 
-    font-size: 36px;
+    font-size: 28px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        font-size: 28px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 50px;
+
+        font-size: 36px;
+    }
 }
 .list-workers:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}
+.list-workers {
+    @media screen and (min-width: 768px) {  
+        margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        
+    }
 }
 
+.list-workers .card-image {
+    width: 450px;
+    height: 460px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+    }
+}
 .section-avatar ,
 .section-vocation {
     text-align: center;
@@ -48,8 +110,19 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
+    width: 450px;
+    height: 622px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 536px;  
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 428px;
+    }
+    
 }
+
 .social {
     display: flex;
     padding-left: 0;

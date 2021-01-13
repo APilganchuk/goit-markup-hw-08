@@ -2,8 +2,6 @@
 display: block;
 
 margin-top: 40px;
-margin-left: 40px;
-margin-right: 40px;
 margin-bottom: 12px;
 
 font-weight: 700;
@@ -70,17 +68,10 @@ color: #212121;
     display: block;
     position: relative;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
+    font-size: 14px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     cursor: pointer;
-
-    @media screen and (min-width: 768px) {
-        font-size: 12px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-    }
 }
 .checkbox {
     appearance: none;
@@ -104,21 +95,6 @@ color: #212121;
     
     border: 2px solid #212121;
     border-radius: 2px;
-
-    
-}
-.checkbox-label .assent {
-    display: inline-flex;
-    margin-left: 20px;
-
-    @media screen and (min-width: 768px) {
-        margin-left: 20px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 0;
-    }
-    
-
 }
 .checkbox:checked ~ .icon {
     border-color: $accent-color;

@@ -4,12 +4,6 @@
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-
-    
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        
-    }
                
 }
 
@@ -32,16 +26,6 @@
     margin-top: 0;
     padding-bottom: 94px;
     
-    display: none;
-    @media screen and (min-width: 768px) {
-        display:none;
-        
-    }
-    @media screen and (min-width: 1200px) {
-        display: block;
-        
-    }
-
 }    
 
 .items {

@@ -15,11 +15,12 @@
     margin-top: 0;
 
     @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
     }
     @media screen and (min-width: 1200px) {
-        justify-content: center;
         margin-bottom: 50px;
     }
     

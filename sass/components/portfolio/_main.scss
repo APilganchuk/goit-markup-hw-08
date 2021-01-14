@@ -1,11 +1,7 @@
 .box.container {
     margin-top: 60px;
     margin-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
+    
     @media screen and (min-width: 1200px) {
         margin-top: 94px;
         margin-bottom: 94px;
@@ -17,13 +13,10 @@
     margin-top: 0;
     flex-wrap: wrap;
     padding-left: 0;
-    
 
-    
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: -15px;
     }
-       
 }
 
 .section-tagline {
@@ -48,23 +41,21 @@
         width: 354px;
         height: 440px;
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-right: 30px;
-        margin-bottom: 30px;
+
         width: 370px;
         height: 404px;
-        
-
     }
     
 }
 .section-list .lists-section:last-child {
     
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 0;
     }
 }
@@ -99,9 +90,7 @@ width: 100%;
     background: $primary-bg-color;
 }
 .section-list .lists-section:nth-last-child(-n + 3) {
-    
-
-    
+ 
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
     }
@@ -115,8 +104,6 @@ width: 100%;
         
         width: 370px;
     }
-    @media screen and (min-width: 1200px) {
-        width: 370px;
-    }
+    
     
 }

@@ -396,10 +396,6 @@ img {
   align-items: center;
 }
 
-.navigation .logo {
-  margin-right: 93px;
-}
-
 @media screen and (min-width: 768px) {
   .navigation .logo {
     margin-right: auto;
@@ -440,12 +436,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .nav {
-    display: flex;
-  }
-}
-
 .auth-nav {
   display: none;
   margin: 0;
@@ -466,12 +456,6 @@ img {
 
 .page-header .address {
   margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header .address {
-    margin-left: auto;
-  }
 }
 
 .auth-nav > .link:last-child {
@@ -880,7 +864,7 @@ img {
   margin-top: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .no-title {
     display: flex;
     flex-wrap: wrap;
@@ -891,7 +875,6 @@ img {
 @media screen and (min-width: 1200px) {
   .no-title {
     display: flex;
-    flex-wrap: nowrap;
   }
 }
 
@@ -1470,13 +1453,6 @@ img {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .box.container {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .box.container {
     margin-top: 94px;
@@ -1492,7 +1468,7 @@ img {
   padding-left: 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .web-container {
     margin: -15px;
   }
@@ -1521,7 +1497,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-list .lists-section {
     margin: 15px;
   }
@@ -1530,13 +1506,12 @@ img {
 @media screen and (min-width: 1200px) {
   .section-list .lists-section {
     margin-right: 30px;
-    margin-bottom: 30px;
     width: 370px;
     height: 404px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1199px) {
   .section-list .lists-section:last-child {
     margin-bottom: 0;
   }
@@ -1587,12 +1562,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .lists-section {
-    width: 370px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .lists-section {
     width: 370px;
   }
@@ -1933,6 +1902,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
+    padding-bottom: 0;
     width: 570px;
     margin-left: 93px;
   }

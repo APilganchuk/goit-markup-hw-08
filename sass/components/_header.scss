@@ -78,14 +78,15 @@
     
 }
 .navigation .logo {
-    margin-right: 93px;
+    
 
     @media screen and (min-width: 768px) {
         margin-right: auto;
     }
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
-    }   
+    }
+     
 }
 
 .link.current::after {
@@ -111,9 +112,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
     }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }   
+      
            
 }
 .auth-nav {
@@ -131,10 +130,7 @@
 }
 .page-header .address {
     margin-left: auto;
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-        
-    }
+    
 }
 .auth-nav > .link:last-child {
     margin-right: 0;

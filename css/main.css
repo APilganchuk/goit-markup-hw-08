@@ -281,6 +281,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -643,7 +645,6 @@ img {
   display: flex;
   background-color: #ffffff;
   text-align: center;
-  font-size: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -720,25 +721,50 @@ img {
 }
 
 .hero-bg {
-  width: 480px;
   min-height: 600px;
   margin: 0 auto;
   background-color: #000000;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-bg {
+    max-width: 480px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.tablet@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.tablet@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-bg {
-    width: 768px;
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.desctop@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.desctop@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-bg {
-    width: 100%;
+    max-width: 1600px;
   }
 }
 
@@ -1091,7 +1117,7 @@ img {
 
 .no-title .section-item::before {
   content: "";
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   display: block;
   background-color: #F5F4FA;
@@ -1302,11 +1328,6 @@ img {
   }
 }
 
-.list-workers .card-image {
-  width: 450px;
-  height: 460px;
-}
-
 @media screen and (min-width: 768px) {
   .list-workers .card-image {
     width: 354px;
@@ -1337,8 +1358,6 @@ img {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
-  height: 622px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1431,7 +1450,7 @@ img {
 }
 
 .clients-list {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin: -15px;
@@ -1470,57 +1489,32 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .clients-list > .item {
-    margin: 14px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list > .item {
-    margin: 0;
-  }
-}
-
 .clients-list .icon {
-  width: 210px;
-  height: 90px;
+  display: flex;
+  width: 100%;
+  height: 100%;
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .clients-list .icon {
-    width: 226px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list .icon {
-    width: 170px;
-    height: 90px;
-  }
-}
-
 .clients-list .item {
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   height: 90px;
+  margin: 15px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
   .clients-list .item {
-    width: 226px;
-    height: 90px;
+    width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-list .item {
     width: 170px;
-    height: 90px;
+    margin: 0;
   }
 }
 
@@ -1583,6 +1577,18 @@ img {
 
 .portfolio-btn .list-navigation:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio-btn .list-navigation:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .portfolio-btn .list-navigation:nth-child(2) {
+    margin-bottom: 15px;
+  }
 }
 
 .box.container {
@@ -1767,6 +1773,7 @@ img {
 
 .cards {
   width: 100%;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -98,7 +98,7 @@
 }
 .no-title .section-item::before {
     content: "";
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     display: block;
     background-color: #F5F4FA;

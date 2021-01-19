@@ -37,7 +37,7 @@
 
 
 .clients-list {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin: -15px;
@@ -69,46 +69,36 @@
         margin-right: 30px;
     }
 }
-.clients-list > .item {   
-    @media screen and (max-width: 1199px) {
-        margin: 14px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin: 0;
-    }
-}
+
 
 .clients-list .icon {
-    width: 210px;
-    height: 90px;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
     color:  #afb1b8;
     transition: color 250ms $timing-function,border 250ms $timing-function;
 
-    @media screen and (min-width: 768px) {
-        width: 226px;
-        height: 90px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-        height: 90px;
-    }
+    
 }
 .clients-list .item {
-    width: 210px;
+    width: calc((100% - 60px) / 2);
     height: 90px;
+
+    margin: 15px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 
     @media screen and (min-width: 768px) {
-    width: 226px;
-    height: 90px;  
+    width: calc((100% - 90px) / 3);
     }
     @media screen and (min-width: 1200px) {
         width: 170px;
-        height: 90px;
+        margin: 0;
     }
    
 }
+
 .clients-list .icon:hover ,
 .clients-list .icon:focus  {
     color: $accent-color;

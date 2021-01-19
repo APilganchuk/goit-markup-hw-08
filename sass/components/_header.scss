@@ -296,7 +296,7 @@
     
 
     text-align: center;
-    font-size: 25px;
+    
     @media screen and (max-width: 767px) {
         display: none;
 
@@ -315,8 +315,7 @@
     }
     @media screen and (min-width: 1200px) {
         width: 100%;
-        
-        
+               
     }
 }
 .menu-container.is-open {

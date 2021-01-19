@@ -43,5 +43,13 @@
 }   
 .portfolio-btn .list-navigation:not(:last-child) {
     margin-right: 8px;
-
+    @media screen and (max-width:400px) {
+        margin-right: 0;
+    }
+}
+.portfolio-btn .list-navigation:nth-child(2) {
+    
+    @media screen and (min-width:400px) and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }

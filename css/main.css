@@ -721,7 +721,6 @@ img {
 }
 
 .hero-bg {
-  min-height: 600px;
   margin: 0 auto;
   background-color: #000000;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.mobile@1x.jpg");
@@ -738,33 +737,38 @@ img {
 
 @media screen and (min-width: 480px) {
   .hero-bg {
-    max-width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.tablet@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.mobile@1x.jpg");
   }
 }
 
 @media screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.mobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-bg {
-    max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.desctop@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.tablet@1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-bg {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.desctop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-bg {
     max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.desctop@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.desctop@2x.jpg");
   }
 }
 

@@ -24,11 +24,12 @@
     color: #212121;
 
     @media screen and (min-width: 768px) {
-        width: 354px;
+        width: calc((100% - 60px) / 2);
         height: 251px;
     }
     @media screen and (min-width: 1200px) {
         width: 270px;
+        width: calc((100% - 90px) / 4);
         height: 251px;
     }
 }
@@ -104,14 +105,7 @@
     border-radius: 4px;
     margin-bottom: 30px;
     padding: 25px 100px;
-    @media screen and (min-width: 768px) {
-        width: 354px;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-        margin-bottom: 30px;
-    }
+    
 }
 .antenna::before {
     background-image: url("../images/icons/antenna-1.svg");

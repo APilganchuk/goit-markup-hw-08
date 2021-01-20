@@ -45,7 +45,6 @@
     
     @media screen and (min-width: 768px) {
         flex-wrap: wrap;
-        margin: -15px;
     }
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
@@ -93,7 +92,7 @@
     width: calc((100% - 90px) / 3);
     }
     @media screen and (min-width: 1200px) {
-        width: 170px;
+        width: calc((100% - 90px) / 4);
         margin: 0;
     }
    

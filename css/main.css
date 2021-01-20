@@ -714,6 +714,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero-title {
@@ -952,7 +953,7 @@ img {
   transform: translateY(-50%);
   display: block;
   width: 16px;
-  height: 15px;
+  height: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
 }

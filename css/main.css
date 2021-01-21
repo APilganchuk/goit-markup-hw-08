@@ -1540,14 +1540,9 @@ img {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .portfolio-btn .list-navigation:not(:last-child) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 767px) {
-  .portfolio-btn .list-navigation:nth-child(2) {
+    margin-right: 8px;
     margin-bottom: 15px;
   }
 }
@@ -1673,9 +1668,15 @@ img {
 .img-overlay {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 294px;
+  width: 100%;
   margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .img-overlay {
+    width: 450px;
+    height: 294px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1691,7 +1692,13 @@ img {
 }
 
 .img-overlay img {
-  width: 450px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .img-overlay img {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {

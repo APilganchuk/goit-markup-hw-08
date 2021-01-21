@@ -13,10 +13,14 @@
     position: relative;
     overflow: hidden;
 
-    width: 450px;
-    height: 294px;
+    width: 100%;
      
     margin: 0;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 294px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 354px;
@@ -27,8 +31,11 @@
     }
 }
 .img-overlay img {
-    width: 450px;
-
+    width: 100%;
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
     
     @media screen and (min-width: 768px) {
         width: 354px;

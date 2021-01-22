@@ -267,6 +267,28 @@ summary {
   display: list-item;
 }
 
+.section-title, .section-caption {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 36px;
+}
+
+.section .section-descriptions {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.section-title, .section-caption {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -331,6 +353,10 @@ img {
   color: #000000;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.logo .logo-color {
+  color: #2196F3;
 }
 
 @media screen and (min-width: 768px) {
@@ -840,6 +866,12 @@ img {
   border-radius: 50%;
   margin: 8px;
   cursor: pointer;
+  transform: rotate(0) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .btn-close {
@@ -1005,22 +1037,6 @@ img {
   border-color: #2196F3;
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.section .section-descriptions {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .section-item {
   font-weight: 700;
   font-size: 18px;
@@ -1172,11 +1188,8 @@ img {
 }
 
 .section-caption {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 47px;
-  font-size: 36px;
 }
 
 .team-work {
@@ -1490,7 +1503,6 @@ img {
 }
 
 .box .list-btn {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;

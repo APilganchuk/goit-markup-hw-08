@@ -63,6 +63,13 @@ border-radius: 50%;
 margin: 8px;
 cursor: pointer;
 
+transform: rotate(0) scale(1);
+transition: transform 250ms $timing-function;
+&:hover {
+    transform: rotate(360deg) scale(1.2);
+    
+}
+ 
 }
 .btn-close {
     position: absolute;
@@ -72,7 +79,12 @@ cursor: pointer;
     transition: fill 250ms $timing-function;
     
     
+    
 }
+    
+
 .btn-modal:hover .btn-close {
     fill: $accent-color;
+       
+    
 }

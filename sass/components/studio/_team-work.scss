@@ -18,12 +18,13 @@
 
 }
 .section-caption {
-    text-align: center;
+    @extend %section-title;
+    
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 47px;
+    
 
-    font-size: 36px;
+    
 }
 
 .team-work {

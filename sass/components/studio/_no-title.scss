@@ -1,18 +1,9 @@
 .section-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #212121;
+    @extend %section-title;
 
 }
 .section .section-descriptions {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @extend %section-descriptions;
 
 }
 .section-item {

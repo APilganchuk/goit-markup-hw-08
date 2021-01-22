@@ -10,6 +10,10 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
+    & .logo-color {
+        color: $accent-color;
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 26px;
 
@@ -50,6 +54,9 @@
 .nav .item {
     cursor: pointer;
     display: inline-block;
+    
+
+    
 }
 
 .auth-nav .link {
@@ -63,11 +70,12 @@
     color: $primary-text-color;
 
     transition: color 250ms $timing-function;
+    
 }
 .item:hover .link ,
 .item:focus .link {
     color: $accent-color;
-    
+       
 
 }
 

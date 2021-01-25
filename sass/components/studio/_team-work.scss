@@ -18,7 +18,7 @@
 
 }
 .section-caption {
-    @extend %section-title;
+    @extend %section-caption;
     
     margin-top: 0;
     margin-bottom: 0;

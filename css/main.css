@@ -267,7 +267,7 @@ summary {
   display: list-item;
 }
 
-.section-title, .section-caption {
+.section-caption {
   text-align: center;
   padding-bottom: 50px;
   font-size: 36px;
@@ -280,7 +280,7 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.section-title, .section-caption {
+.section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

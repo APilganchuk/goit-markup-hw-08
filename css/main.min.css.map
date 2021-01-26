@@ -17,7 +17,7 @@
         "../sass/components/studio/_team-work.scss",
         "../sass/components/studio/_our_team.scss",
         "../sass/components/studio/_regular-clients.scss",
-        "../sass/components/portfolio/_radio-buttons.scss",
+        "../sass/components/portfolio/_portfolio-buttons.scss",
         "../sass/components/portfolio/_main.scss",
         "../sass/components/portfolio/_overlay.scss",
         "../sass/components/_footer.scss",

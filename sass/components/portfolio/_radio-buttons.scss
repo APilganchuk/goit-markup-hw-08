@@ -1,0 +1,39 @@
+.portfolio-buttons {
+    margin-bottom: 50px;   
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+    
+}
+.portfolio-checkbox {
+    display: inline-flex;
+    
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    
+    cursor: pointer;
+
+    transition: background-color 250ms $timing-function ,
+                box-shadow 250ms $timing-function;
+}
+.check-input:checked + .portfolio-checkbox {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: $accent-color;
+}
+.portfolio-checkbox:not(:last-child) {
+    margin-right: 4px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
